@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-family: "Bodoni Moda", serif;
+}
+
+.whole-page {
+  align-items: flex-start;
+  display: flex;
+  gap: 50px;           
+  max-width: 900px;    
+  margin: 0 auto;      
+  padding: 40px;
+}
+
+.whole-page .container {
+  display: flex;
+  margin-left: 0px;
+  align-items: center;
+  min-height: 50vh;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0px;
+}
+
+.sidebar {
+  text-align: left;
+  width: 250px;
+  height: 10vh;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar h3 {
+  font-size: 5vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  display: inline-block;   
+  overflow: hidden; 
+  white-space: nowrap;       
+  border-right: .15em solid; 
+  
+  width: 0;                 
+  animation: 
+    typing 2s steps(8, end) forwards, 
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 7.48ch } 
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+.sidebar h3:hover {
+  color: #9f6b6b;
+  transition: 0.3s;
+}
+
+.navlinks {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navlinks li {
+  margin: 15px 0;
+}
+
+.navlinks a:hover {
+  text-decoration: none;
+  color: #9f6b6b;
+  transition: 0.5s;
+}
+
+.navlinks a.active {
+  color: #9f6b6b;
+}
+
+.content {
+  margin-top: 18vh;
+}
+
+.content p {
+  font-size: 2.3vh;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.content img {
+  display: block;
+  height: 19em;
+}
+
+.about p{
+  line-height: 1.5;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 3.5vh;
+  text-align: justify;
+}
+
+.content button {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: inherit;
+}
+
+.content button:hover {
+  opacity: 0.4;
+  color: #9f6b6b;
+}
+
+.gear {
+  display: none;
+}
+
+.gear h3 {
+  margin-top: 50px;
+  font-size: 4.8vh;
+}
+
+.gear li {
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.contact {
+  padding-top: 4.5vh;
+  justify-items: left;
+}
+
+.contact h3 {
+  font-size: 4.5vh;
+}
+
+@media screen and (max-width: 768px) {
+  .whole-page {
+    flex-direction: column; 
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    padding: 5px;
+  }
+
+  .sidebar h3 {
+    text-align: left;
+    font-size: 6vh;
+    margin-bottom: 15px;
+  }
+
+  .navlinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .navlinks li {
+    margin: 0;
+  }
+
+  .content {
+    margin-top: 0   ; 
+    width: 100%;
+  }
+
+  .about p {
+    padding-top: 12px !important;
+    text-align: left; 
+  }
+
+  .content img {
+    width: 100%;
+    height: 50%;
+    height: auto;
+  }
+}
