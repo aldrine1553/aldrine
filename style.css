@@ -150,6 +150,33 @@ body {
   font-size: 4.5vh;
 }
 
+.journal {
+  text-decoration: none;
+}
+
+.journal a {
+  text-decoration: none;
+  color: black;
+}
+
+.journal a:hover {
+  text-decoration: none;
+  color: #9f6b6b;
+  transition: 0.5s;
+}
+
+.blog {
+  line-height: 1.5;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 3.5vh;
+  text-align: left;
+}
+
+.blog p{
+  text-align: left;
+}
+
 @media screen and (max-width: 768px) {
   .whole-page {
     flex-direction: column; 
@@ -184,6 +211,11 @@ body {
   .content {
     margin-top: 0   ; 
     width: 100%;
+  }
+
+  .journal {
+    list-style: none;
+    font-style: none;
   }
 
   .about p {
